@@ -19,14 +19,12 @@ body{width:100%;height:100%;
   overflow: hidden;
 }
 .card{width:100%;height:auto;
-  max-width: 780px;
+  max-width: 680px;
   padding: 0;margin: 0 auto;
   border-radius: 6px;
   overflow: hidden;
   box-shadow:0 0 8px 3px rgba(0,0,0,.1);
   background:#f0f0f0;
-}
-.childCard{width:100%;height:auto;
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -45,12 +43,14 @@ h3{font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
 }
-.price{display: flex; align-items: end;}
+h1{margin:1rem 0;}
+.price{display: flex; align-items: end;
+  margin:1.5rem auto;
+}
 .price h4{font-size:1.6rem;
   color: #3c8067;  
 }
 .price span{padding-left: 2rem;}
-
 .button{width:100%; height:auto;
   max-width: 90%;
   padding:1rem;margin:0 auto;
@@ -65,7 +65,7 @@ h3{font-family: 'Montserrat', sans-serif;
   border-radius:6px;
 }
 @media only screen and (max-width:375px){
-  .childCard{display:grid;
+  .card{display:grid;
     grid-template-columns: 1fr;
   }
   .imgMobile{display:block;}
